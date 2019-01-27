@@ -1,0 +1,6 @@
+lexnlp/build/lib/lexnlp/extract/en/contracts/data/*
+lexnlp/lexnlp/extract/en/contracts/data/*
+lexnlp/dist/lexnlp-0.2.3-py3.7.egg
+.git
+.vscode
+.gitignore
