@@ -1,11 +1,16 @@
 # nlpspike
 
-To run locally:
+This is a sample project showcasing integration with LexNLP; an open source Natural Language Processing (NLP) Python library distributed by LexPredict under AGPL v3.0. There is an option to obtain a commerical license by contacting the author. 
 
-- Ensure python 3.7 is installed (if running from Windows, ensure Python is in path)
-- pip install flask
-- Download and install Anaconda3
-- Open the Anaconda Prompt (as an administrator)
-	- cd to the nlpspike\lexnlp directory 
-	- run: python setup.py install
-	- NOTE: I had to explicitly install regex and reporters_db after the above setup failed
+Other LexPredict products are also available, such as ContraxSuite which could assist with adding even more context to legal documents.
+
+LexNLP:
+- https://contraxsuite.com/lexnlp/
+- https://github.com/LexPredict/lexpredict-lexnlp
+
+ContraxSuite:
+- https://contraxsuite.com/
+
+For local development run the following commands from the root project directory:
+- docker-compose up --build
+- yarn --cwd ./client serve
