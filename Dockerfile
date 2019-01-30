@@ -6,7 +6,7 @@ COPY ./client .
 RUN yarn install && yarn build
 
 
-FROM python:3.6-jessie
+FROM python:3.6-jessie as runtime
 
 # Install git
 RUN apt-get update && apt-get install -y git
@@ -16,11 +16,11 @@ WORKDIR /app
 COPY ./requirements.txt ./requirements.txt
 RUN pip install -r requirements.txt
 
-# Copy over the remainder of the application
+# Copy the application
 COPY . .
 
-# Copy over the client build of the application
+# Copy the client build folder of the previous stage
 COPY --from=client-build /src/build ./client/build
 
-# Use the default Flask webserver (okay for a spike, but better WSGI server like gunicorn)
+# Use the default Flask webserver, which is okay for a spike, but a proper WSGI server like gunicorn should be used in production
 ENTRYPOINT [ "python", "api.py" ]

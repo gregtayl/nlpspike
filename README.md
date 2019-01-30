@@ -10,6 +10,10 @@ ContraxSuite:
 - https://contraxsuite.com/
 
 To run locally, execute the following commands from the root project directory:
-- yarn --cwd ./client install
-- yarn --cwd ./client build
-- docker-compose up
+- docker-compose up --build
+OR
+- docker build -t nlpspike .
+- docker run -p "8080:5000" nlpspike
+
+For client development, the package.json file has been update to proxy all requests to localhost:8080, so you can use the webpack development server by running the following command from the ./client directory:
+- yarn start
