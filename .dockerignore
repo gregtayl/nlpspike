@@ -11,3 +11,4 @@ Dockerfile*
 **/bin
 **/obj
 **/node_modules
+**/client

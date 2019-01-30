@@ -4,16 +4,3 @@ services:
     build: .
     ports:
      - "8080:5000"
-    environment:
-     - ENV=development
-     - DB=mongodb://mongodb:27017/nlpspike
-  mongodb:
-    image: mongo:latest
-    environment:
-      - MONGO_DATA_DIR=/usr/data/db
-      - MONGO_LOG_DIR=/dev/null
-    volumes:
-      - ./data/db:/usr/data/db
-    ports:
-        - 27017:27017
-    command: mongod --logpath=/dev/null

@@ -1,8 +1,6 @@
-# nlpspike
+# NLP Spike
 
-This is a sample project showcasing integration with LexNLP; an open source Natural Language Processing (NLP) Python library distributed by LexPredict under AGPL v3.0. There is an option to obtain a commerical license by contacting the author. 
-
-Other LexPredict products are also available, such as ContraxSuite which could assist with adding even more context to legal documents.
+This is a spike application to test integration with LexNLP; an open source Legal-based Natural Language Processing (NLP) Python library developed by LexPredict. LexNLP is distributed under AGPL v3.0, though commerical licenses can also be purchased.
 
 LexNLP:
 - https://contraxsuite.com/lexnlp/
@@ -11,6 +9,7 @@ LexNLP:
 ContraxSuite:
 - https://contraxsuite.com/
 
-For local development run the following commands from the root project directory:
-- docker-compose up --build
-- yarn --cwd ./client serve
+To run locally, execute the following commands from the root project directory:
+- yarn --cwd ./client install
+- yarn --cwd ./client build
+- docker-compose up
