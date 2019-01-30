@@ -7,8 +7,8 @@
 bitbucket-pipelines.yml
 docker-compose.yml
 docker-compose.*.yml
+README.md
 Dockerfile*
 **/bin
 **/obj
 **/node_modules
-**/client
