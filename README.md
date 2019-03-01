@@ -11,7 +11,9 @@ ContraxSuite:
 
 To run locally, execute the following commands from the root project directory:
 - docker-compose up --build
+
 OR
+
 - docker build -t nlpspike .
 - docker run -p "8080:5000" nlpspike
 
